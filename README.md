@@ -14,10 +14,10 @@ pip install -r requirements.txt
 
 ## Speaker Verification 
 
-Within speaker verification, we have three tracks (closed, open, and semi-supervised). We have two sets of validation and test data. The validation and test data is the same for the first two tracks. The validation and test data for the challenge both consist of pairs of audio segments, and the task is to determine whether they are from the same speaker or from different speakers. Teams are invited to create a system that takes the test data and produces a list of floating-point scores, with a single score for each pair of segments.
+Within speaker verification, we have three tracks (closed, open, and semi-supervised). We have two sets of validation and test data, for Track 1 & 2 and Track 3. The validation and test data for the challenge both consist of pairs of audio segments, and the task is to determine whether they are from the same speaker or from different speakers. Teams are invited to create a system that takes the test data and produces a list of floating-point scores, with a single score for each pair of segments.
 
 ### Validation Data 
-This repository only provide the validation trial pairs for Track 1 and 2. For Track 3, please download using this [link](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/data_workshop_2022/Track3_validation_trials.txt).
+This repository only provides the validation trial pairs for Track 1 and 2. For Track 3, please download using this [link](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/data_workshop_2022/Track3_validation_trials.txt).
 The validation data consists of trial pairs of speech from the identities in the VoxCeleb1 dataset and additional data we've prepared. To download the additional data, please use this [link](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/data_workshop_2022/VoxSRC2022_dev.zip). (Each trial pair consists of two single-speaker audio segments and can be found in `data/verif/voxsrc2022_dev.txt`. 
          
 ### File Format 
@@ -30,9 +30,9 @@ Your ouput file for scoring should be a single space-delimited text files contai
   
 For example: 
 ```
-0.503 id10912/H5qe-mHhOyQ/00007.wav id10912/nDpaVYtKQUo/00004.wav
-0.431 id10560/p_V0oeCcc0w/00011.wav id10560/_SIZKabFLAM/00001.wav
-0.351 id10792/La6IDPsWJHE/00007.wav id11044/BVzEyYdVLXg/00001.wav
+0.567 id10343/nQZLZ8uoddE/00012.wav id10343/TmFxFmrcngk/00018.wav
+0.578 id10743/ZiHOolivv3A/00001.wav id10743/sVPg5TuRNaM/00017.wav
+0.460 id10683/KViv-v2WVa8/00012.wav id10683/RXTsmtlLuFg/00006.wav
 ```
 Also see `data/verif/scores.txt` for an example file. 
 
