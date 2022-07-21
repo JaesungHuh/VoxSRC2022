@@ -82,7 +82,7 @@ For speaker diarisation, we only have a single track. The goal is to break up mu
 
 ### Validation Data 
 
-**The validation data is not ready now. We'll provide the link in here as soon as we are ready.**
+We provide a new version of VoxConverse dataset. (ver 0.3) Please visit this [link](https://www.robots.ox.ac.uk/~vgg/data/voxconverse/) to download the wavfiles and rttm files.
 
 ### File Format
 Your output file for scoring (as well as the ground truth labels for the validation set which we provide) must be a [Rich Transcription Time Marked  (RTTM)](#rttm) file.
